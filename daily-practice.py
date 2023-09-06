@@ -42,3 +42,6 @@ def stringy(size):
             
     return string
         
+def daily():
+    print("daily practice would be nice if I knew what I was doing. I knew so much and now I feel like I know almost nothing. At least I can still commit and push to the repo...")
+
