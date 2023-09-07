@@ -50,4 +50,8 @@ def mystery():
     results = {'sanity': 'Hello'}
     return results
 
-
+def check_alive(health):
+    if(health <= 0):
+        return False
+    else:
+        return True
