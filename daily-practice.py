@@ -55,3 +55,17 @@ def check_alive(health):
         return False
     else:
         return True
+    
+#it was the test problem, i imagine they live somehwere where that's legal
+def people_with_age_drink(age):
+    drink = ''
+    if age < 14:
+        drink = 'drink toddy'
+    elif age < 18:
+        drink = 'drink coke'
+    elif age < 21: 
+        drink = 'drink beer'
+    else: 
+        drink = 'drink whisky'
+    return drink    
+
