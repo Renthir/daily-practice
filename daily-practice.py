@@ -1,3 +1,4 @@
+import math
 #first commit
 
 #just remembering if I can do this right
@@ -69,3 +70,21 @@ def people_with_age_drink(age):
         drink = 'drink whisky'
     return drink    
 
+print("Hello, world!")
+print("I'm just quickly doing this again to get the certif")
+
+
+def get_expected_cost(beds, baths):
+    value = 80000 + (beds * 30000) + (baths * 10000)
+    return value
+
+def get_cost(sqft_walls, sqft_ceiling, sqft_per_gallon, cost_per_gallon):
+    total_sqft = sqft_walls + sqft_ceiling
+    cost = (total_sqft / sqft_per_gallon) * cost_per_gallon
+    return cost
+
+def get_actual_cost(sqft_walls, sqft_ceiling, sqft_per_gallon, cost_per_gallon):
+    total_sqft = sqft_walls + sqft_ceiling
+    paint_needed = math.ceil(total_sqft / sqft_per_gallon)
+    cost = paint_needed * cost_per_gallon
+    return cost
