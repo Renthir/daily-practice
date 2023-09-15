@@ -88,3 +88,14 @@ def get_actual_cost(sqft_walls, sqft_ceiling, sqft_per_gallon, cost_per_gallon):
     paint_needed = math.ceil(total_sqft / sqft_per_gallon)
     cost = paint_needed * cost_per_gallon
     return cost
+
+def get_expected_cost(beds, baths, has_basement):
+    price_beds = beds * 30000
+    price_baths = baths * 10000
+    value = 80000 + price_beds + price_baths + (40000 * has_basement)
+    return value
+
+def cost_of_project(engraving, solid_gold):
+    cost = (50 + 7 * len(engraving)) * (not solid_gold) + (100 + 10 * len(engraving)) * solid_gold
+    return cost
+
