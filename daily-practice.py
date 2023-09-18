@@ -118,3 +118,22 @@ def cost_of_project(engraving, solid_gold):
         cost = 50 + (7 * len(engraving))
     return cost
 
+def get_water_bill(num_gallons):
+    if num_gallons <= 8000:
+        price = 5
+    elif num_gallons <= 22000:
+        price = 6
+    elif num_gallons <= 30000:
+        price = 7
+    else: 
+        price = 10
+    bill = price * (num_gallons / 1000)
+    return bill
+
+def get_phone_bill(gb):
+    if gb <= 15:
+        bill = 100
+    else:
+        extra = gb - 15
+        bill = 100 + (100 * extra)
+    return bill
