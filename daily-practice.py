@@ -99,3 +99,22 @@ def cost_of_project(engraving, solid_gold):
     cost = (50 + 7 * len(engraving)) * (not solid_gold) + (100 + 10 * len(engraving)) * solid_gold
     return cost
 
+def get_grade(score):
+    if score < 60:
+        grade = "F"
+    elif score < 70:
+        grade = "D"
+    elif score < 80:
+        grade = "C"
+    elif score < 90:
+        grade = "B"
+    else:
+        grade = "A"
+
+def cost_of_project(engraving, solid_gold):
+    if solid_gold == True:
+        cost = 100 + (10 * len(engraving))
+    else:
+        cost = 50 + (7 * len(engraving))
+    return cost
+
