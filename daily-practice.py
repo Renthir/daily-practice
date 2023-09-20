@@ -74,7 +74,7 @@ print("Hello, world!")
 print("I'm just quickly doing this again to get the certif")
 
 
-def get_expected_cost(beds, baths):
+def get_expected_cost1(beds, baths):
     value = 80000 + (beds * 30000) + (baths * 10000)
     return value
 
@@ -95,7 +95,7 @@ def get_expected_cost(beds, baths, has_basement):
     value = 80000 + price_beds + price_baths + (40000 * has_basement)
     return value
 
-def cost_of_project(engraving, solid_gold):
+def cost_of_project1(engraving, solid_gold):
     cost = (50 + 7 * len(engraving)) * (not solid_gold) + (100 + 10 * len(engraving)) * solid_gold
     return cost
 
@@ -137,3 +137,14 @@ def get_phone_bill(gb):
         extra = gb - 15
         bill = 100 + (100 * extra)
     return bill
+
+def percentage_liked(ratings):
+    list_liked = [i>=4 for i in ratings]
+    # TODO: Complete the function
+    percentage_liked = sum(list_liked) / len(ratings)
+    return percentage_liked
+
+def percentage_growth(num_users, yrs_ago):
+    growth = (num_users[-1] - num_users[-yrs_ago - 1])/num_users[-yrs_ago - 1]
+    return growth
+
