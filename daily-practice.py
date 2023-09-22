@@ -148,3 +148,26 @@ def percentage_growth(num_users, yrs_ago):
     growth = (num_users[-1] - num_users[-yrs_ago - 1])/num_users[-yrs_ago - 1]
     return growth
 
+#exercise
+
+def numbers_even ():
+    for n  in range(2, 10, 2):
+        print(n)
+
+    print("We have 4 even numbers")
+
+
+#or
+
+def numbers_even2 (min, max):
+    count = 0 
+    for num in range(min, max):
+        if num % 2 == 0:
+            count += 1
+            print(num)
+    print(f"We have {count} even numbers")
+
+
+# numbers_even2(1, 10)
+
+
