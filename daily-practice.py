@@ -171,3 +171,21 @@ def numbers_even2 (min, max):
 # numbers_even2(1, 10)
 
 
+pi = 3.14159 # approximate
+diameter = 3
+
+# Create a variable called 'radius' equal to half the diameter
+radius = diameter / 2
+
+# Create a variable called 'area', using the formula for the area of a circle: pi times the radius squared
+area = pi * (radius ** 2)
+
+# Variables representing the number of candies collected by alice, bob, and carol
+alice_candies = 121
+bob_candies = 77
+carol_candies = 109
+
+# Your code goes here! Replace the right-hand side of this assignment with an expression
+# involving alice_candies, bob_candies, and carol_candies
+to_smash = (alice_candies + bob_candies + carol_candies) % 3
+
