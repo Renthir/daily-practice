@@ -189,3 +189,11 @@ carol_candies = 109
 # involving alice_candies, bob_candies, and carol_candies
 to_smash = (alice_candies + bob_candies + carol_candies) % 3
 
+def practice(done_today):
+    if not done_today:
+        must_complete = True
+    else:
+        must_complete = False
+    return must_complete
+
+
