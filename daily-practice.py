@@ -196,4 +196,9 @@ def practice(done_today):
         must_complete = False
     return must_complete
 
-
+def whats_the_point(point):
+    if point:
+        print('Finally, I have it!')
+    else:
+        print("There isn't one, is there? We're just all fleshbags trying to find meaning where there is none. Writing silly lines so our complex rocks can read them back to us in interesting ways.")
+        return "There's no point"
