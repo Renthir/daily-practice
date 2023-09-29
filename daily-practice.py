@@ -202,3 +202,30 @@ def whats_the_point(point):
     else:
         print("There isn't one, is there? We're just all fleshbags trying to find meaning where there is none. Writing silly lines so our complex rocks can read them back to us in interesting ways.")
         return "There's no point"
+
+
+def round_to_two_places(num):
+    """Return the given number rounded to two decimal places. 
+    
+    >>> round_to_two_places(3.14159)
+    3.14
+    """
+    return round(num, 2)
+
+print(round(5.3980, -1))
+print(round(40.3980, -2))
+print(round(302.3980, -3))
+
+def to_smash(total_candies, num_friends=3):
+    """Return the number of leftover candies that must be smashed after distributing
+    the given number of candies evenly between 3 friends.
+    
+    >>> to_smash(91)
+    1
+    """
+    return total_candies % num_friends
+
+x = -10
+y = 5
+# # Which of the two variables above has the smallest absolute value?
+smallest_abs = min(abs(x), abs(y))
