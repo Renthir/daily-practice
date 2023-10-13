@@ -231,3 +231,45 @@ y = 5
 smallest_abs = min(abs(x), abs(y))
 
 #I'm back, ready to code again
+
+def to_smash2(total_candies):
+    """Return the number of leftover candies that must be smashed after distributing
+    the given number of candies evenly between 3 friends.
+    
+    >>> to_smash(91)
+    1
+    """
+    grammar = ""
+    if total_candies == 1:
+        grammar = "candy"
+    else:
+        grammar = "candies"
+
+    print("Splitting", total_candies, grammar)
+    return total_candies % 3
+
+# to_smash2(91)
+# to_smash2(1)
+
+def sign(num):
+    if num > 0:
+        return 1
+    elif num < 0:
+        return -1
+    else:
+        return 0
+    
+def is_negative(number):
+    if number < 0:
+        return True
+    else:
+        return False
+
+def concise_is_negative(number):
+    return True if number < 0 else False
+
+def wants_all_toppings(ketchup, mustard, onion):
+    """Return whether the customer wants "the works" (all 3 toppings)
+    """
+    return ketchup and mustard and onion
+
