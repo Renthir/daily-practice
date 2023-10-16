@@ -273,3 +273,16 @@ def wants_all_toppings(ketchup, mustard, onion):
     """
     return ketchup and mustard and onion
 
+def exactly_one_sauce(ketchup, mustard, onion):
+    """Return whether the customer wants either ketchup or mustard, but not both.
+    (You may be familiar with this operation under the name "exclusive or")
+    """
+    return (ketchup and not mustard) or (mustard and not ketchup) 
+
+def exactly_one_topping(ketchup, mustard, onion):
+    """Return whether the customer wants exactly one of the three available toppings
+    on their hot dog.
+    """
+    sum_of = int(ketchup) + int(mustard) + int(onion)
+    return True if sum_of == 1 else False
+
