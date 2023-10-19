@@ -337,3 +337,5 @@ def fashionably_late(arrivals, name):
     else:
         return False
     
+list1 = []
+list1.upper()
