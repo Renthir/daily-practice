@@ -358,3 +358,27 @@ def elementwise_greater_than(L, thresh):
     """
     return [num > thresh for num in L]
 
+def menu_is_boring(meals):
+    """Given a list of meals served over some period of time, return True if the
+    same meal has ever been served two days in a row, and False otherwise.
+    """
+    for i in range(len(meals)-1):
+        if meals[i] == meals[i+1]:
+            return True
+    return False
+
+def menu_is_boring(meals):
+    """Given a list of meals served over some period of time, return True if the
+    same meal has ever been served two days in a row, and False otherwise.
+    """
+    for i in range( len(meals)-1 )
+        if meals[i] == meals[i+1]
+            return True
+    return False
+
+def estimate_average_slot_payout(n_runs):
+    # Play slot machine n_runs times, calculate payout of each
+    payouts = [play_slot_machine()-1 for i in range(n_runs)]
+    # Calculate the average value
+    avg_payout = sum(payouts) / n_runs
+    return avg_payout
