@@ -382,3 +382,12 @@ def estimate_average_slot_payout(n_runs):
     # Calculate the average value
     avg_payout = sum(payouts) / n_runs
     return avg_payout
+
+def is_valid_zip(zip_code):
+    """Returns whether the input string is a valid (5 digit) zip code
+    """
+    if len(zip_code) == 5:
+        if zip_code.isdigit():
+            return True
+    return False
+
