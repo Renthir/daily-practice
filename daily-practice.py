@@ -391,3 +391,12 @@ def is_valid_zip(zip_code):
             return True
     return False
 
+def if_chuck_says_so():
+    return True if not True else not True
+
+def validate_hello(greetings):
+    hello_list = ["hello", "ciao", "salut", "hallo", "hola", "ahoj", "czesc"]
+    for greeting in hello_list:
+            if greeting in greetings.lower():
+                return True
+    return False
